@@ -204,6 +204,7 @@ ul {
   padding: 65px 60px;
   background: #ffffff;
   border: 1px solid #cacaca;
+
 }
 
 .about-content__info {
@@ -233,4 +234,25 @@ ul {
 
 .about-content__info-second{
   background-image: url("../img/about/about2.svg");
+}
+.about-content__block-first{
+  margin-bottom: 32px;
+}
+.job__buttons{
+  margin-bottom:45px;
+}
+.job__button{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+.job__button:not(:last-child){
+  margin-right: 85px;
+}
+.job__button-checked{
+  color: #E1670E;
+}
+.job__heading{
+  margin-bottom: 50px;
 }
