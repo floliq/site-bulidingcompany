@@ -258,6 +258,35 @@ ul {
 .job__heading{
   margin-bottom: 50px;
 }
+.job-content__subheading{
+  margin-bottom: 8px;
+}
+.job-content__text{
+  width: 758px;
+  margin-bottom: 50px;
+}
+.job-content__buttons{
+  display:flex;
+
+}
+.job-content__button:not(:last-child){
+ margin-right: 32px;
+}
+.job-content__button{
+  width: 175px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.job-content__button-order{
+  width: 147px;
+ height: 60px;
+ border: 1px solid #333333;
+ background-color:white;
+ color: #333333;
+ font-weight: normal;
+
+}
 
 .questions__heading{
   margin-bottom: 32px;
@@ -278,7 +307,7 @@ ul {
   border-color: #cacaca;
 }
 
-.questions-content__title{
+.subheading{
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
