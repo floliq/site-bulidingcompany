@@ -58,6 +58,23 @@ ul {
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+  transition-property: border , color, outline-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #FF9900;
+}
+
+.menu__link:focus {
+  outline-color: #FF9900;
+}
+
+.menu__link:active {
+  border-bottom: 2px solid #E1670E;
+  outline: none;
+  color: #E1670E;
 }
 
 .payment,
@@ -105,6 +122,20 @@ ul {
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 153, 0, 0.7);
+}
+
+.button:focus {
+  background-color: rgba(255, 153, 0, 0.7);
+  outline: none;
+}
+
+.button:active {
+  background: #E1670E;
 }
 
 .payment__bullets {
@@ -344,10 +375,28 @@ ul {
 }
 
 .order__link {
+  width: fit-content;
   font-weight: 600;
   font-size: 18px;
   line-height: 36px;
   color: #CACACA;
+  transition-property: color, outline-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+}
+
+.order__link:hover {
+  color: #FF9900;
+}
+
+.order__link:focus {
+  outline-color: #FF9900;
+}
+
+.order__link:active {
+  color: #E1670E;
+  outline: none;
 }
 
 .order__center {
