@@ -243,7 +243,6 @@ ul {
 
 .about-content {
   display: flex;
-  justify-content: space-between;
 }
 
 .about-content__left {
@@ -261,6 +260,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-right:32px;
 }
 
 .about-content__right {
@@ -396,7 +396,6 @@ ul {
 
 .job-content {
   display: flex;
-  justify-content: space-between;
 }
 
 .job-content__subheading {
@@ -445,6 +444,7 @@ ul {
 .job-content__left {
   width: 50%;
   flex-grow: 1;
+  margin-right:142px;
 }
 
 .job-content__right {
@@ -583,7 +583,6 @@ ul {
 
 .order__content {
   display: flex;
-  justify-content: space-between;
   padding: 53px 0;
 }
 
@@ -663,6 +662,7 @@ ul {
 .order__center {
   display: flex;
   flex-direction: column;
+  margin-right:236px;
 }
 
 .order__heading {
@@ -801,11 +801,19 @@ ul {
   max-width: 363px;
   color: #cacaca;
 }
-
+@media (max-width: 1600px) {
+  .order__center{
+  margin-right:100px;
+}
+}
 @media (max-width: 1440px) {
   .order__right {
     display: none;
   }
+  .order__center{
+    margin-right:0;
+  }
+
 
   .menu__link:not(:last-child) {
     margin-right: 55px;
