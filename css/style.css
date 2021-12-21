@@ -948,7 +948,7 @@ ul {
   }
 
   .questions__heading {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .questions-content__title {
@@ -973,6 +973,9 @@ ul {
 @media (max-width: 1024px) {
   .about-content__text {
     max-width: 450px;
+  }
+  .questions__heading {
+    margin-bottom: 27px;
   }
 }
 
@@ -1210,6 +1213,37 @@ ul {
   .job-content__button {
     font-size: 12px;
     line-height: 15px;
+    padding: 11px 44px;
+  }
+
+  .job-content__subheading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .job-content__text {
+    margin-bottom: 14px;
+  }
+
+  .job-content__button-order {
+    padding: 12px 31px;
+  }
+
+  .questions__heading {
+    margin-bottom: 15px;
+  }
+
+  .questions-content__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .questions-content__link {
+    width: 30px;
+    height: 30px;
   }
 
   .order-form__send {
