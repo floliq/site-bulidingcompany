@@ -1,27 +1,15 @@
 $(".accordion").accordion({
   heightStyle: "content",
   active: true,
+  collapsible: true,
 });
 
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
 
@@ -50,7 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
 var menuBtn = document.querySelector(".menu__btn");
 menuBtn.onclick = () => {
   menuBtn.classList.toggle("menu__btn-open");
-  document
-    .querySelector(".menu__burgerbar")
-    .classList.toggle("menu__burgerbar-open");
+  document.querySelector(".menu__bar").classList.toggle("menu__bar-open");
 };
+
+var menuSearch = document.querySelector(".menu-search");
+menuSearch.addEventListener("click", () => {
+  document.querySelector(".menu__form").classList.add("menu__form-active");
+  menuSearch.style.pointerEvents = "none";
+  menuSearch.style.opacity = "0";
+});
+
+document.querySelector(".menu__close").addEventListener("click", () => {
+  document.querySelector(".menu__form").classList.remove("menu__form-active");
+  menuSearch.style.pointerEvents = "auto";
+  menuSearch.style.opacity = "1";
+});
