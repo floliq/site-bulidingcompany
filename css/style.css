@@ -1411,12 +1411,15 @@ ul {
   }
 
   .about-content__left {
+    display: block;
     height: auto;
     background: none;
   }
 
   .about-content__image {
-    display: flex;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   .about-content__more {
